@@ -35,9 +35,9 @@ rolfs97@yahoo.com
 
 ## Technologies Used
 
-C#, Nancy, HTML, CSS, Bootstrap, Razor
+C#, Nancy, HTML, CSS, Bootstrap, Razor, .Net
 ### License
 
 MIT
 
-Copyright (c) 2017 **_David_**
+Copyright (c) 2017 **_David Rolfs_**
