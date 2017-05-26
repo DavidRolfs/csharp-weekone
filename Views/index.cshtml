@@ -5,7 +5,7 @@
 <ul>
   @foreach(var person in Model)
   {
-      <li>@person.GetFirst() @person.GetLast()</li>
+      <li><a href="contact/@person.GetId()">@person.GetFirst() @person.GetLast()</a></li>
   }
 </ul>
 

@@ -23,6 +23,10 @@ namespace Address
         // List<Contact> allContacts = Contact.GetAll();
         return View["added.cshtml", newContact];
       };
+      Get["/contact/{id}"] = parameters => {
+      Contact contact = Contact.Find(parameters.id);
+        return View["/single.cshtml", contact];
+      };
     }
   }
 }
