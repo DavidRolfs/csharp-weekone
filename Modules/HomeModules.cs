@@ -27,6 +27,10 @@ namespace Address
       Contact contact = Contact.Find(parameters.id);
         return View["/single.cshtml", contact];
       };
+      Post["/cleared"] = _ => {
+        Contact.ClearAll();
+        return View["cleared.cshtml"];
+      };
     }
   }
 }
