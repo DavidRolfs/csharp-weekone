@@ -12,10 +12,10 @@ namespace Address
         List<Contact> allContacts = Contact.GetAll();
         return View["index.cshtml", allContacts];
       };
-      Get ["/form"] = _ =>{
+      Get ["/contact/add"] = _ =>{
         return View["contactForm.cshtml"];
       };
-      Post ["/added"] = _ =>{
+      Post ["/contact/new"] = _ =>{
         Contact newContact = new Contact(Request.Form["new-first"],
                                           Request.Form["new-last"],
                                           Request.Form["new-number"],
@@ -27,7 +27,7 @@ namespace Address
       Contact contact = Contact.Find(parameters.id);
         return View["/single.cshtml", contact];
       };
-      Post["/cleared"] = _ => {
+      Post["/contacts/clear"] = _ => {
         Contact.ClearAll();
         return View["cleared.cshtml"];
       };
