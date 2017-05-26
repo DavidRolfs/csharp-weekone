@@ -18,12 +18,13 @@ User enters a persons contact information into a form and submits the informatio
 * Open web browser of your choice and go to http://localhost:5004/ to view root page.
 
 ## Specs
-
-* User can see all contacts on Root page.
-* Link to form on Root page.
-* Submit form and get sent to a confirmation page.
-* Can click on Contact name and view their information.
-* Clear all button on Root page.
+| Description |
+|-------------|
+| User can see all contacts on Root page. |
+| Link to form on Root page. |
+| Submit form and get sent to a confirmation page. |
+| Can click on Contact name and view their information. |
+| Clear all button on Root page. |
 
 ## Known Bugs
 none
