@@ -8,9 +8,7 @@
 
 User enters a persons contact information into a form and submits the information. The page will save the information entered and user can enter as many contacts as they would like. User has the ability to view each contact individually as well as a list of all.
 
-## Gh-Pages
 
-https://davidrolfs.github.io/csharp-weekone
 
 ## Setup/Installation Requirements
 
