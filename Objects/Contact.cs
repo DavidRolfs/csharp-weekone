@@ -28,11 +28,11 @@ namespace Address.Objects
     {
       return _lastName;
     }
-    public string Number()
+    public string GetNumber()
     {
       return _number;
     }
-    public string Address()
+    public string GetAddress()
     {
       return _address;
     }
