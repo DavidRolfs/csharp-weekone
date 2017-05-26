@@ -2,7 +2,12 @@
 
 <p>All Contacts</p>
 
-<li> </li>
+<ul>
+  @foreach(var person in Model)
+  {
+      <li>@person.GetFirst() @person.GetLast()</li>
+  }
+</ul>
 
 
 <p><a href="/form">click here</a> to add a contact </p>

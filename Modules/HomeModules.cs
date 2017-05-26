@@ -9,7 +9,8 @@ namespace Address
     public HomeModule()
     {
       Get ["/"] = _ =>{
-        return View["index.cshtml"];
+        List<Contact> allContacts = Contact.GetAll();
+        return View["index.cshtml", allContacts];
       };
       Get ["/form"] = _ =>{
         return View["contactForm.cshtml"];
@@ -19,7 +20,7 @@ namespace Address
                                           Request.Form["new-last"],
                                           Request.Form["new-number"],
                                           Request.Form["new-address"]);
-        List<Contact> allContacts = Contact.GetAll();
+        // List<Contact> allContacts = Contact.GetAll();
         return View["added.cshtml", newContact];
       };
     }
