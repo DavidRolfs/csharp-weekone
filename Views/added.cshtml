@@ -6,10 +6,12 @@
 <h1>You created a new contact</h1>
 
 <ul>
-  <li>@Model.GetFirst() @Model.GetLast() has been added</li>
+  <li>@Model.GetFirst() @Model.GetLast() has been added to your contact list</li>
   <ul>
-    <li>@Model.GetAddress()</li>
-    <li>@Model.GetNumber()</li>
+    <li>First Name: @Model.GetFirst()</li>
+    <li>Last Name: @Model.GetLast()</li>
+    <li>Home Adress: @Model.GetAddress()</li>
+    <li>Phone Number: @Model.GetNumber()</li>
   </ul>
 </ul>
 

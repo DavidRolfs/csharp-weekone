@@ -46,7 +46,7 @@ namespace Address.Objects
     }
     public static void ClearAll()
     {
-      _instances.Clear();
+        _instances.Clear();
     }
     public static Contact Find(int searchId)
     {
