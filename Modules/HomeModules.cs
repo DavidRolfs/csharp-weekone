@@ -19,7 +19,10 @@ namespace Address
         Contact newContact = new Contact(Request.Form["new-first"],
                                           Request.Form["new-last"],
                                           Request.Form["new-number"],
-                                          Request.Form["new-address"]);
+                                          Request.Form["new-address"],
+                                          Request.Form["new-city"],
+                                          Request.Form["new-state"],
+                                          Request.Form["new-zip"]);
         return View["added.cshtml", newContact];
       };
       Get["/contact/{id}"] = parameters => {
