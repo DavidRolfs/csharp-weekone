@@ -1,3 +1,7 @@
 body{
   background-color: #d7e6eb;
 }
+
+ul{
+  list-style: none;
+}
