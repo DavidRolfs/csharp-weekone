@@ -20,7 +20,6 @@ namespace Address
                                           Request.Form["new-last"],
                                           Request.Form["new-number"],
                                           Request.Form["new-address"]);
-        // List<Contact> allContacts = Contact.GetAll();
         return View["added.cshtml", newContact];
       };
       Get["/contact/{id}"] = parameters => {
